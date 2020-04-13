@@ -34,7 +34,20 @@ namespace OBM.Models.ViewModels
             IsTeams = tour.IsTeams ? "Yes" : "No";
             IsStarted = tour.IsStarted ? "Yes" : "No";
             Public = motherEvent.Public;
-            Banner = 0;//tour.ViewImages;
+            
+            var banner = tour.ViewImages ?? 0;
+            var game_image = banner;
+            if (banner != 0 )
+            {
+                //banner = banner.ToString()[0] + (banner.ToString()[0] * 10);
+                banner = banner % 100;
+            }
+            if (game_image >= 100)
+            {
+                game_image = game_image / 100;
+            }
+            Banner = banner;
+            GameImage = game_image;
         }
 
         public int TournamentID { get; set; }
@@ -51,5 +64,6 @@ namespace OBM.Models.ViewModels
         public string IsStarted { get; set; }
         public bool Public { get; set; }
         public int Banner { get; set; }
+        public int GameImage { get; set; }
     }
 }

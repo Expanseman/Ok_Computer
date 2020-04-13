@@ -102,6 +102,7 @@ CREATE TABLE [dbo].[Tournament](
     [UrlString] NVARCHAR(256) NOT NULL,
     [IsTeams] BIT NOT NULL,
     [IsStarted] BIT NOT NULL,
+    [ViewImages] INT NULL,
     CONSTRAINT [FK_dbo.Tournament_dbo.Event_EventID] Foreign KEY ([EventID]) REFERENCES [dbo].[Event] ([EventID])
 );
 GO

@@ -5,12 +5,13 @@
 
     if (ViewBag.Access == true)
     {
-        <div class="jumbotron" style='background-image:url("/Media/gre-ora.png")'>
+        var b = Model.Banner.ToString() + ".png";
+        <div class="jumbotron" style='background-image:url("/Media/Banners/@b")'>
             <h1 class="display-1">@Html.DisplayFor(model => model.TournamentName)</h1>
         </div>
 
         <div class="row">
-            <div class="col-sm">
+            <div class="col">
                 <table align="center">
                     <tr>
                         <th>Description</th>
@@ -32,11 +33,14 @@
                         <th>Challonge</th>
                         <td><a href="http://challonge.com/@Model.UrlString">link</a></td>
                     </tr>
-
+                    <tr>
+                        <th>@Html.DisplayFor(model => model.Banner)</th>
+                        <td>@Html.DisplayFor(model => model.GameImage)</td>
+                    </tr>
                 </table>
             </div>
-            <div class="col-sm">
-                <img src="~/Media/koi.gif" />
+            <div class="col" align="center" >
+                <img class="img-thumbnail" src="~/Media/GameImages/2.jpg" />
             </div>
         </div>
         <br />
