@@ -104,7 +104,7 @@ nav {
     text-align: center;
 }
 
-#registerLink:hover, #loginLink:hover, #logoutLink:hover, #accountLink:hover, #nav-item:hover, .eventdata:hover {
+#registerLink:hover, #loginLink:hover, #logoutLink:hover, #accountLink:hover, #nav-item:hover, .eventdata:hover, a {
     color: #4ac959 !important;
     text-decoration: none;
 }

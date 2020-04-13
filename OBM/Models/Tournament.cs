@@ -32,5 +32,6 @@
         public bool IsTeams { get; set; }
 
         public bool IsStarted { get; set; }
+        public int? ViewImages { get; set; }
     }
 }

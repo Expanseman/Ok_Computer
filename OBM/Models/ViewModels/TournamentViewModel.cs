@@ -34,6 +34,7 @@ namespace OBM.Models.ViewModels
             IsTeams = tour.IsTeams ? "Yes" : "No";
             IsStarted = tour.IsStarted ? "Yes" : "No";
             Public = motherEvent.Public;
+            Banner = 0;//tour.ViewImages;
         }
 
         public int TournamentID { get; set; }
@@ -49,5 +50,6 @@ namespace OBM.Models.ViewModels
         public string IsTeams { get; set; }
         public string IsStarted { get; set; }
         public bool Public { get; set; }
+        public int Banner { get; set; }
     }
 }
