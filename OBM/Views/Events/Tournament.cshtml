@@ -6,13 +6,15 @@
     if (ViewBag.Access == true)
     {
         var b = Model.Banner.ToString() + ".png";
+        var g = Model.GameImage.ToString() + ".jpg";
+
         <div class="jumbotron" style='background-image:url("/Media/Banners/@b")'>
             <h1 class="display-1">@Html.DisplayFor(model => model.TournamentName)</h1>
         </div>
 
         <div class="row">
             <div class="col">
-                <table align="center">
+                <table align="right">
                     <tr>
                         <th>Description</th>
                         <td>@Html.DisplayFor(model => model.Description)</td>
@@ -39,8 +41,8 @@
                     </tr>
                 </table>
             </div>
-            <div class="col" align="center" >
-                <img class="img-thumbnail" src="~/Media/GameImages/2.jpg" />
+            <div class="col" align="center">
+                <img class="img-thumbnail" src="~/Media/GameImages/@g" />
             </div>
         </div>
         <br />
@@ -51,7 +53,8 @@
             <div id="MinimalGraph" style="display:block">
                 <canvas id="myChart"></canvas>
             </div>
-
+        </div>
+        <div>
             <table class="table table-bordered table-striped">
                 <tr>
                     <th>Brackets</th>
