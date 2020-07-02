@@ -26,7 +26,7 @@ This is the senior capstone project of the team Ok Computer, the Ok Bracket Mana
 
 
 ### **Status**
-Nothing started yet! Developement will start soon.
+Project is considered finished for now.
 
 ### **Building**
 This project is built on ASP.NET MVC 5 framework using C#. To get started with this porject follow these instructions: [Quickstart: Use Visual Studio to create your first ASP.NET Core web app](https://docs.microsoft.com/en-us/visualstudio/ide/quickstart-aspnet-core?view=vs-2019).
