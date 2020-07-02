@@ -1,4 +1,3 @@
-# **README**
 ## **Ok_Computer**
 *Senior Sequence Capstone Project 2019-2020 Repository*
 
